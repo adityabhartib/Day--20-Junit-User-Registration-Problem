@@ -1,14 +1,16 @@
 package com.bridgelabz;
 
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
+
 public class UserRegistrationTest {
     @BeforeAll
     static void beforeAllTestMsg() {
         System.out.println("-----Welcome to User Registration Problem-----");
+    }
+    @AfterAll
+    static void afterAllTestPassedMsg(){
+        System.out.println("All Test Case Passed");
     }
 
     @AfterEach
@@ -54,6 +56,12 @@ public class UserRegistrationTest {
         UserValidation validation = new UserValidation();
         Boolean result5 = validation.password2("Ksndfkdn");
         Assertions.assertEquals(result5, true);
+    }
+    @Test
+    void given_password2_should_returnTrue() {
+        UserValidation validation = new UserValidation();
+        Boolean result6 = validation.password3("Ksndkdv67");
+        Assertions.assertEquals(result6, true);
     }
 }
 
