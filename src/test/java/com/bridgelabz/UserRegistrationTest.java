@@ -7,11 +7,11 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 public class UserRegistrationTest {
     @BeforeAll
-    static void Msg(){
+    static void beforeAllTestMsg(){
         System.out.println("-----Welcome to User Registration Problem-----");
     }
     @AfterEach
-    public void afterMsg(){
+    public void afterEachTestPassMsg(){
         System.out.println("Passed");
     }
     @Test
