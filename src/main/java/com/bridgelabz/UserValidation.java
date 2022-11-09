@@ -37,8 +37,4 @@ public class UserValidation {
     public Boolean password3(String password2) {
         return (Pattern.matches(PASSWORD_RULE3,password2));
     }
-
-    public Boolean password4(String password3) {
-        return (Pattern.matches(PASSWORD_RULE4,password3));
-    }
 }

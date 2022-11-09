@@ -63,11 +63,5 @@ public class UserRegistrationTest {
         Boolean result6 = validation.password3("Ksndkdv67");
         Assertions.assertEquals(result6, true);
     }
-    @Test
-    void given_password3_should_returnTrue() {
-        UserValidation validation = new UserValidation();
-        Boolean result7 = validation.password4("Ksndkdv67@");
-        Assertions.assertEquals(result7, true);
-    }
 }
 
