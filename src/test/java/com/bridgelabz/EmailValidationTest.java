@@ -29,7 +29,7 @@ public class EmailValidationTest {
     }
     @Test
     public void testEmailValidation(){
-        System.out.println("Email :"+email+ "> is valid");
+        System.out.println(email+ "======== is valid");
         Assert.assertEquals(expectedResult,emailValidation.checkEmail(email));
     }
 }
