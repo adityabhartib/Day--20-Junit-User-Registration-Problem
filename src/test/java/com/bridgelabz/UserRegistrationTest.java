@@ -15,7 +15,7 @@ public class UserRegistrationTest {
 
     @AfterEach
     public void afterEachTestPassMsg() {
-        System.out.println("Passed");
+        System.out.println("Happy Test Case");
     }
 
     @Test
